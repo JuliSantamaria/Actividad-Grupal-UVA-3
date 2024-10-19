@@ -137,7 +137,7 @@
     background-color: white;
     border-radius: 50px;
     padding: 3px 20px 3px 20px;
-    height: 10vh;
+    height: 11vh;
     
     }
 
@@ -216,30 +216,23 @@
     
   }
 
-  .hero2 .Propuesta .p2 {
-    font-size: 20px;
-    text-align: center;
-    font-weight: 400;
-    width: 30vh;
-    padding: 20px;
+
+  .Publico{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    gap: 50px;
+    align-items: center;
+
   }
 
-  .hero2 .Propuesta .p3 {
-    font-size: 20px;
-    width: 30vh;
-    font-weight: 400;
-  }
-
-  .hero2 .Propuesta .p4 {
-    font-size: 20px;
-    width: 30vh;
-    font-weight: 400;
-  }
+ 
 
   .card {
     position: relative;
     width: 300px;
     height: 350px;
+    
   }
 
   .card .face {
@@ -254,27 +247,40 @@
 
   .card .front {
     transform: perspective(600px) rotateY(0deg);
+    
   }
 
   .card .front ul {
-    position: absolute;
-    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     height: 100%;
-    object-fit: cover;
-    padding: 50px;
-  }
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+}
+
+.card .front ul li {
+    margin: 5px 0; 
+}
+
+
+
+
+
 
   .card .back {
     transform: perspective(600px) rotateY(180deg);
     background: rgb(3, 35, 54);
-    padding: 15px;
+    padding: 68px;
     color: #f3f3f3;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
-    padding: 60px;
+    
   }
 
   .card .back .link {
@@ -309,19 +315,9 @@
 
 
 
-  .Publico {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  
 
-  .Publico .publico {
-    display: flex;
-    flex-direction: column;
-
-  }
+  
 
   .publico p {
     background-color: white;
@@ -345,6 +341,181 @@
     width: 300px;
     text-align: center;
   }
+
+  .card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    
+  }
+
+  .hero3{
+    
+    margin: 0 50px 0 50px;
+    height: 100vh;
+    margin-bottom: 20px ;
+    display: flex;
+  }
+
+  .hero3 .Paletacolores {
+    background-color: white;
+    width: 50vh;
+    text-align: center;
+    margin: 0 50px 50px 50px;
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero3 .Paletacolores div {
+    margin: 20px;
+  }
+
+  .hero3 .Paletacolores #color1 {
+    background-color: #50a048;
+    padding: 10px;
+    width: 20vh;
+    border: solid 2px;
+    border-radius: 5px;
+  }
+
+  .hero3 .Paletacolores #color2 {
+    background-color: #295b20;
+    padding: 10px;
+    width: 20vh;
+    border: solid 2px;
+    border-radius: 5px;
+  }
+
+  .hero3 .Paletacolores #color3 {
+    background-color: #ff783e;
+    padding: 10px;
+    width: 20vh;
+    border: solid 2px;
+    border-radius: 5px;
+  }
+
+  .hero3 .Paletacolores #color4 {
+    background-color: #fff;
+    padding: 10px;
+    width: 20vh;
+    border: solid 2px;
+    border-radius: 5px;
+  }
+
+  .hero3 .Paletacolores #color5 {
+    background-color: #000;
+    padding: 10px;
+    width: 20vh;
+    color: white;
+    border: solid 2px;
+    border-radius: 5px;
+  }
+
+  .hero3 .Logo {
+    background-color: white;
+    width: 50vh;
+    text-align: center;
+    margin: 0 50px 50px 50px;
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .hero3 .Logo img {
+    width: 30vh;
+  }
+
+  .hero3 .mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .hero3 .Tipografia {
+    background-color: white;
+    width: 50vh;
+    text-align: center;
+    margin: 0 50px 0 50px;
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40vh;
+  }
+
+  .hero3 .Tipografia {
+    font-size: 19px;
+  }
+
+  .hero3 .Mapasitio {
+    background-color: white;
+    width: 50vh;
+    text-align: left;
+    margin: 15px 50px 35px 50px;
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    gap: 10px;
+  }
+
+  .hero3 .boton {
+    text-align: center;
+    background-color: #ff783e;
+    padding: 10px;
+    border-radius: 50px;
+    height: 7vh;
+    width: 20vh;
+  }
+
+  .hero3 .boton a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .hero3 .justificacion {
+    background-color: white;
+    width: 50vh;
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .justificacion {
+    background-color: white;
+    width: 190vh;
+    text-align: center;
+    border-radius: 50px;
+    margin: 5px 50px 50px 50px;
+    padding: 50px;
+    font-size: 15px;
+  }
+
+  .justificacion h2 {
+    font-weight: 400;
+  }
+
 
 
   footer {
