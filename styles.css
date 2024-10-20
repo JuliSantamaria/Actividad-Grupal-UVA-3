@@ -2,528 +2,85 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: "Katibeh", serif;
-    background-color: #50a048;
-    background: linear-gradient(to bottom, #50a048, #295b20);
-    height: auto; 
-    margin: 0;
-    
-  }
-  
-  header {
-    
-    padding: 10px;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 23px;
-  }
-
-  nav .Logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-  }
-
-  nav img {
-    width: 10vh;
-    
-  }
-
-  nav .button{
-    text-decoration: none;
-    color: white;
-    background-color: #ff783e;
-    padding: 10px;
-    border-radius: 100px;
-    height: 6vh;
-    font-size: 20px;
-  }
-  
-
-
-  nav h3{
-    font-size: 40px;
-    letter-spacing: 2px;
-    color: #ffffff;
-    
-  }
-  
-  .hero {
-    background-color: #ffffff;
-    padding: 40px;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 40px;
-    min-height: 78vh;
-  }
-  
-  .lefthero {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    
-  }
-
-  .lefthero h2 {
-    font-weight: 400;
-    font-size: 48px;
-  }
-
-  .lefthero p {
-    font-weight: 400;
-    font-size: 24px;
-  }
-
-  .lefthero .button {
-    width: 391px;
-    height: 84px;
-    text-align: center;
-    background-color: #ff783e;
-    padding: 20px;
-    border-radius: 47px ;
-    font-size: 30px;
-    text-decoration: none;
-    color: #ffffff;
-    
-  }
-
-  .hero img {
-    width: 55vh;
-  }
-
-  .hero2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;    
-    height: auto;
-    width: 100vh;
-    margin: 20px auto;     
-    border-radius: 40px;
-    padding: 100px;
-  }
-
-  .hero2 h1 {
-    font-size: 50px;
-    color: black;
-    font-weight: 400;
-    margin-bottom: 50px;
-    margin-top: -50px;
-    background-color: white;
-    border-radius: 50px;
-    padding: 3px 20px 3px 20px;
-    height: 11vh;
-    
-    }
-
-  .hero2 .tarjeta1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero2 .tarjeta2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero2 .tarjeta3 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero2 .tarjeta4 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hero2 .Propuesta{
-    background-color: white;
-    border-radius: 50px;
-    padding: 20px;
-    
-    
-  }
-
-  .hero2 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: 500;
-  }
-
-  .hero2 .Propuesta .propuestas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    grid-gap: 20px; 
-    align-items: stretch; 
-    justify-items: center; 
-  }
-  
-  .hero2 .Propuesta p {
-    background: linear-gradient(to bottom, #50a048, #295b20);
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 100%;
-    height: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box; 
-  }
-
-  .hero2 .Propuesta div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-
-  
-
-  .hero2 .Propuesta .p1 {
-    font-size: 20px;
-    text-align: center;
-    font-weight: 400;
-    width: 30vh;
-    padding: 20px;
-    
-  }
-
-
-  .Publico{
-    display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    gap: 50px;
-    align-items: center;
-
-  }
-
- 
-
-  .card {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    
-  }
-
-  .card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
-  }
-
-  .card .front {
-    transform: perspective(600px) rotateY(0deg);
-    
-  }
-
-  .card .front ul {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.card .front ul li {
-    margin: 5px 0; 
+p {
+  color: #092300;
+}
+
+body {
+  font-family: "Katibeh", serif;
+  background-color: #50a048;
+  background: linear-gradient(to bottom, #50a048, #295b20);
+  height: auto;
+  margin: 0;
+
+}
+
+header {
+
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 23px;
+}
+
+nav .Logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+nav img {
+  width: 10vh;
+
+}
+
+nav .button {
+  text-decoration: none;
+  color: white;
+  background-color: #ff783e;
+  padding: 10px;
+  border-radius: 100px;
+  height: 6vh;
+  font-size: 20px;
 }
 
 
 
+nav h3 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: #ffffff;
 
+}
 
-
-  .card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
-    padding: 68px;
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0 5px 10px #000;
-    
-  }
-
-  .card .back .link {
-    border-top: solid 1px #f3f3f3;
-    height: 50px;
-    line-height: 50px;
-  }
-
-  .card .back .link a{
-    color: #f3f3f3
-  }
-
-  .card .back h3 {
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-  }
-
-  .card .back p{
-    letter-spacing: 1px;
-  }
-
-  .card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-
-  }
-
-  .card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-
-  }
-
-
-
-  
-
-  
-
-  .publico p {
-    background-color: white;
-    padding: 20px;
-    border-radius: 50px;
-    width: 50vh;
-  }
-
-  .Publico ul {
-    background-color: white;
-    padding: 20px;
-    border-radius: 50px;
-  }
-
-  .Publico ul li{
-    list-style: none;
-    text-align: center;
-  }
-  
-  .Publico h1 {
-    width: 300px;
-    text-align: center;
-  }
-
-  .card {
-    position: relative;
-    width: 300px;
-    height: 350px;
-    
-  }
-
-  .hero3{
-    
-    margin: 0 50px 0 50px;
-    height: 100vh;
-    margin-bottom: 20px ;
-    display: flex;
-  }
-
-  .hero3 .Paletacolores {
-    background-color: white;
-    width: 50vh;
-    text-align: center;
-    margin: 0 50px 50px 50px;
-    padding: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero3 .Paletacolores div {
-    margin: 20px;
-  }
-
-  .hero3 .Paletacolores #color1 {
-    background-color: #50a048;
-    padding: 10px;
-    width: 20vh;
-    border: solid 2px;
-    border-radius: 5px;
-  }
-
-  .hero3 .Paletacolores #color2 {
-    background-color: #295b20;
-    padding: 10px;
-    width: 20vh;
-    border: solid 2px;
-    border-radius: 5px;
-  }
-
-  .hero3 .Paletacolores #color3 {
-    background-color: #ff783e;
-    padding: 10px;
-    width: 20vh;
-    border: solid 2px;
-    border-radius: 5px;
-  }
-
-  .hero3 .Paletacolores #color4 {
-    background-color: #fff;
-    padding: 10px;
-    width: 20vh;
-    border: solid 2px;
-    border-radius: 5px;
-  }
-
-  .hero3 .Paletacolores #color5 {
-    background-color: #000;
-    padding: 10px;
-    width: 20vh;
-    color: white;
-    border: solid 2px;
-    border-radius: 5px;
-  }
-
-  .hero3 .Logo {
-    background-color: white;
-    width: 50vh;
-    text-align: center;
-    margin: 0 50px 50px 50px;
-    padding: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-  }
-
-  .hero3 .Logo img {
-    width: 30vh;
-  }
-
-  .hero3 .mid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
-  .hero3 .Tipografia {
-    background-color: white;
-    width: 50vh;
-    text-align: center;
-    margin: 0 50px 0 50px;
-    padding: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    height: 40vh;
-  }
-
-  .hero3 .Tipografia {
-    font-size: 19px;
-  }
-
-  .hero3 .Mapasitio {
-    background-color: white;
-    width: 50vh;
-    text-align: left;
-    margin: 15px 50px 35px 50px;
-    padding: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 45vh;
-    gap: 10px;
-  }
-
-  .hero3 .boton {
-    text-align: center;
-    background-color: #ff783e;
-    padding: 10px;
-    border-radius: 50px;
-    height: 7vh;
-    width: 20vh;
-  }
-
-  .hero3 .boton a{
-    text-decoration: none;
-    font-size: 20px;
-    color: #000;
-  }
-
-  .hero3 .justificacion {
-    background-color: white;
-    width: 50vh;
-    text-align: center;
-    margin: 50px;
-    padding: 50px;
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .justificacion {
-    background-color: white;
-    width: 190vh;
-    text-align: center;
-    border-radius: 50px;
-    margin: 5px 50px 50px 50px;
-    padding: 50px;
-    font-size: 15px;
-  }
-
-  .justificacion h2 {
-    font-weight: 400;
-  }
-
-
-
-  footer {
-    position: absolute;
-    bottom: auto;
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-
-  }
+footer {
+  position: absolute;
+  bottom: auto;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #295b20;
+}
