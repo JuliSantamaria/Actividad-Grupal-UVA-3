@@ -1,0 +1,44 @@
+.hero {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 40px;
+    min-height: 78vh;
+}
+
+.lefthero {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+}
+
+.lefthero h2 {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.lefthero p {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.lefthero .button {
+    width: 391px;
+    height: 84px;
+    text-align: center;
+    background-color: #ff783e;
+    padding: 20px;
+    border-radius: 47px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.hero img {
+    width: 55vh;
+}
