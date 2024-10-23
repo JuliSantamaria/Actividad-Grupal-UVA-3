@@ -223,3 +223,68 @@ h3 {
     align-items: center;
     text-align: center;
 }
+
+.Logo {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px 50px 50px;
+    align-items: center;
+    gap: 50px;
+    justify-content:flex-start;
+}
+
+.Logo .logo {
+    width: 20vh;
+}
+
+.links {
+    padding: 50px;
+    text-align: center;
+    gap: 20px;
+}
+
+.boton-enlace {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff783e; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+    margin: 20px;
+}
+
+.boton-enlace:hover {
+    background-color: #45a049; /* Color al pasar el ratón */
+}
+
+.detalles {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+.Integrantes {
+    background-color: white;
+    display: flex;
+    padding: 50px;
+    margin: 30px;
+    justify-content: space-evenly;
+    color: black;
+    height: 60vh;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.Integrantes img {
+    width: 30vh;
+    border-radius: 100%;
+}
+
+.Integrantes #Julian {
+    height: 32vh;
+}
