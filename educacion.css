@@ -1,0 +1,73 @@
+.hero {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 40px;
+    min-height: 150vh;
+}
+
+.p1 {
+    font-size: 20px;
+}
+
+.hero .section1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.hero .section1 h1{
+    font-size: 40px;
+}
+
+.hero .section1 img {
+    height: 50vh;
+    margin-top: 15px;
+}
+
+.hero .section2 {
+    
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    white-space: normal;
+}
+
+.hero .tarjeta{
+    max-width: 70vh;
+    height: 60vh;
+    background-color: #d8e4d4;
+}
+
+.hero .section2 img{
+    width: 70vh;
+    height: 25vh;
+    
+}
+
+.hero .subsection {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .subsection p {
+    margin-top: 13px;
+}
+
+
+.section2 .subsection .button {
+    margin-top: 50px;
+    width: 300px;
+    text-align: center;
+    background-color: #ff783e;
+    padding: 15px 50px 15px 50px;
+    border-radius: 47px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+
+}

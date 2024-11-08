@@ -1,0 +1,55 @@
+.hero {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 40px;
+    min-height: 150vh;
+    
+}
+
+.p1 {
+    font-size: 20px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#map {
+	height: 400px;
+	width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.formulario {
+    width: 80%;
+    max-width: 2000px;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d6e9d8;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: none;
+}

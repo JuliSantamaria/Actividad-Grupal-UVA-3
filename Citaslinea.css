@@ -1,0 +1,120 @@
+.hero {
+    background-color: #ffffff;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 40px;
+    min-height: 150vh;
+    
+}
+
+.p1 {
+    font-size: 20px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#map {
+	height: 400px;
+	width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.formulario {
+    width: 80%;
+    max-width: 2000px;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #d6e9d8;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.calendar {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.calendar h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+  
+#dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+  
+.date {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+  
+.date.selected {
+    background-color: #4caf50;
+    color: white;
+}
+  
+.date.weekend {
+    color: red;
+}
+  
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+  
+#mensaje {
+    margin-top: 10px;
+    font-weight: bold;
+}
+  

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Veterinaria TigreVet</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="CalculadoraPresupuesto.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="Logo">
+        <img src="images/New Project (21) 1.png">
+        <h3>TigreVet</h3>
+      </div>
+      <ul>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="educacion.html">Educación</a></li>
+        <li><a href="blog.html">FAQs</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="avances.html">Avances</a></li>
+      </ul>
+      <a href="#" class="button">Citas en línea</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <p class="p1">Home/Servicios/Calculadora de presupuesto</p>
+    <h1>Calculadora de presupuesto</h1>
+    <h3>Te ayudamos a calcular el presupuesto por consultas segun nuestro servicio veterinario</h3>
+
+    <!-- Calculadora de Presupuesto -->
+    <div class="calculator-container">
+      <div class="calculator">
+        <div class="animal">
+            <label class="label" for="animal">Animal</label>
+            <select id="animal">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            </select>
+        </div>
+        
+
+        <label><input type="checkbox" class="service" data-cost="500"> Turno clínica</label>
+        <label><input type="checkbox" class="service" data-cost="700"> Castración</label>
+        <label><input type="checkbox" class="service" data-cost="1000"> Turno urgente</label>
+        <label><input type="checkbox" class="service" data-cost="400"> Peluquería</label>
+        <div class="animal">
+          <label class="label" for="vacunacion">Vacunación</label>
+          <select id="vacunacion">
+            <option value="0">Ninguna</option>
+            <option value="300">Vacuna anual</option>
+            <option value="150">Desparasitación</option>
+          </select>
+        </div>
+        <label><input type="checkbox" class="service" data-cost="800"> Desparasitación</label>
+        <label><input type="checkbox" class="service" data-cost="1500"> Cirugía de emergencia</label>
+
+        <h2>Costo total: <span id="total-cost">0</span> ARS</h2>
+        <button onclick="clearFields()">Limpiar campos</button>
+      </div>
+    </div>
+    <!-- Fin Calculadora de Presupuesto -->
+
+  </main>
+
+  <footer>
+    <a href="">Enlace al sitio grupal</a>
+    <p>Julian Santamaria - Augusto Caceres - Bergoglio Ramiro - Lautaro Cavallo</p>
+    <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Nro Curso: 492766 - Nro Grupo: 13</p>
+    <img src="images/uade.png">
+  </footer>
+
+  <script src="CalculadoraPresupuesto.js"></script>
+</body>
+</html>
