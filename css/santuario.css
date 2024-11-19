@@ -22,32 +22,33 @@
 }
 
 .hero section p{
+    font-size: 1.5em;
     margin-bottom: 25px;
-    text-align: center;
+    text-align: justify;
 }
 
 
-.button {
-    
-    margin-top: 22px;
-    width: 200px;
+.hero section .button {
+    background: rgba(255, 120, 62, 1);
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
     text-align: center;
-    background-color: #ff783e;
-    padding: 13px 50px 13px 50px;
-    border-radius: 47px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
 
+.hero section .button:hover {
+    background-color: #3d7a37;
 }
 
 .hero section{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.hero section .button{
-
 }

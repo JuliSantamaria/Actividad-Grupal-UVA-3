@@ -16,17 +16,17 @@
 
 }
 
-.lefthero h2 {
+.lefthero h1 {
     font-weight: 400;
-    font-size: 48px;
+    font-size: 72px;
 }
 
 .lefthero p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 32px;
 }
 
-.lefthero .button {
+.lefthero .button1 {
     width: 391px;
     height: 84px;
     text-align: center;
@@ -37,6 +37,9 @@
     text-decoration: none;
     color: #ffffff;
 
+}
+.lefthero .button1:hover {
+    background-color: #3d7a37;
 }
 
 .hero img {

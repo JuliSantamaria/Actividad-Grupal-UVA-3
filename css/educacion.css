@@ -3,11 +3,18 @@
     padding: 40px;
     margin: 20px;
     border-radius: 40px;
-    min-height: 150vh;
+    min-height: 90vh;
 }
 
-.p1 {
+.hero .p1 {
     font-size: 20px;
+    font-weight: 400;
+}
+
+.hero h1{
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 10px;
 }
 
 .hero .section1{
@@ -19,7 +26,14 @@
 }
 
 .hero .section1 h1{
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.hero .section1 p{
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .hero .section1 img {
@@ -60,14 +74,21 @@
 
 
 .section2 .subsection .button {
-    margin-top: 50px;
-    width: 300px;
+    background: rgba(255, 120, 62, 1);
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
     text-align: center;
-    background-color: #ff783e;
-    padding: 15px 50px 15px 50px;
-    border-radius: 47px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
 
+}
+
+.section2 .subsection .button:hover {
+    background-color: #3d7a37;
 }

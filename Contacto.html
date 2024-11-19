@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clínica Veterinaria TigreVet</title>
+  <meta name="description" content="Contáctanos en TigreVet para consultas, citas y más información. Encuentra nuestra ubicación o envíanos un mensaje.">
+  <meta name="keywords" content="contacto, TigreVet, veterinaria, ubicación, citas, mensajes">
+  <meta name="author" content="TigreVet">
+  <title>Contacto | TigreVet</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/Contacto.css">
@@ -16,7 +19,7 @@
     <nav>
       <div class="Logo">
         <a href="index.html">
-          <img src="images/New Project (21) 1.png">
+          <img src="images/New Project (21) 1.png" alt="Logo de TigreVet">
           <h3>TigreVet</h3>
         </a>
       </div>
@@ -25,41 +28,58 @@
         <li><a href="educacion.html">Educación</a></li>
         <li><a href="FAQs.html">FAQs</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="Metodosdepago.html">Metodos de pago</a></li>
+        <li><a href="Metodosdepago.html">Métodos de pago</a></li>
       </ul>
       <a href="Citaslinea.html" class="button">Citas en línea</a>
     </nav>
   </header>
 
   <main class="hero">
-    <p class="p1">Home/Contacto</p>
+    <p class="p1">Home / Contacto</p>
     <h1>Contacto</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quidem voluptatibus quibusdam neque doloremque ad cupiditate doloribus, sint inventore distinctio perferendis quis error a repellat voluptatem adipisci corporis quod facilis!
-    Earum praesentium eos asperiores sit minus quis, deleniti tenetur a perferendis eaque. Voluptates distinctio maxime quia voluptatum libero praesentium non cum similique. Nemo nulla eius ea maiores deleniti quisquam ullam.
-    Magni, illum modi? Tempora illo asperiores at tempore dolore rerum modi hic fuga, sapiente iure velit iste blanditiis, eos ut a dignissimos facere fugit, optio corrupti. Praesentium unde sit accusantium!
-    Provident aliquam repellendus accusantium numquam asperiores velit aperiam sequi, reiciendis error consequatur illo, laborum iusto dolor distinctio maiores. Ipsam, non dolor. At ex eaque perferendis quas aperiam repudiandae, deleniti mollitia.
-    Nisi sapiente veritatis, enim accusamus tempore distinctio vero consequuntur labore atque, minima autem earum assumenda quibusdam sint dolorem at fuga? Excepturi, doloremque ad maxime veniam sed voluptates dicta debitis adipisci?</p>
-    <div id="map"></div>
-    <div class="formulario">
+    <p>En TigreVet estamos aquí para ayudarte. Si tienes preguntas, necesitas agendar una cita o deseas más información sobre nuestros servicios, no dudes en contactarnos. ¡Estamos a tu disposición!</p>
+
+    <section class="formulario">
+      <h2>Envíanos un mensaje</h2>
+      <form action="#" method="post">
         <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre">
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
 
         <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
-    </div>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+        <button type="submit" class="button">Enviar</button>
+      </form>
+    </section>
+
+    <section class="redes-sociales">
+      <h2>También puedes contactarte con nosotros a través de Instagram y enterarte de todas las novedades</h2>
+      <a href="https://www.instagram.com/tigre.vet/" class="instagram-button" target="_blank">
+        <img src="images/instagram-icon.png" alt="Instagram TigreVet">
+        <span>Seguinos</span>
+      </a>
+    </section>
+
+    <section id="map-container" aria-label="Mapa de ubicación">
+      <h1>Ubicación</h1>
+      <p>Encuéntranos en nuestra dirección:</p>
+      <div id="map"></div>
+    </section>
+
   </main>
-    
+
   <footer>
-    <a href="">Enlace al sitio grupal</a>
+    <a href="#">Enlace al sitio grupal</a>
     <p>Julian Santamaria - Augusto Caceres - Bergoglio Ramiro - Lautaro Cavallo</p>
     <p>Trabajo grupal - Materia Diseño y Desarrollo Web - Nro Curso: 492766 - Nro Grupo: 13</p>
-    <img src="images/uade.png">
+    <img src="images/uade.png" alt="Logo de la Universidad UADE">
   </footer>
 
   <script src="scripts/Contacto.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap" async defer></script>
 </body>
+
 </html>

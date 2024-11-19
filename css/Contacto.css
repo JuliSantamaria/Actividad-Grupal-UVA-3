@@ -3,38 +3,122 @@
     padding: 40px;
     margin: 20px;
     border-radius: 40px;
-    min-height: 150vh;
-    
+    min-height: 90vh;
 }
 
-.p1 {
+.hero p {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.hero .p1 {
     font-size: 20px;
+    font-weight: 400;
 }
 
-h1{
+.hero h1{
     font-size: 50px;
-    margin-bottom: 30px;
+    font-weight: 100;
+    margin-bottom: 10px;
 }
 
-#map {
-	height: 400px;
-	width: 60%;
-    margin: 0 auto;
+.hero h2{
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+/* Subsection Section */
+.subsection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.subsection .tarjeta {
+    background-color: #d8e4d4;
+    height: 50vh;
+    max-width: 35vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.subsection .tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.subsection .tarjeta .textos {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.subsection .tarjeta .textos h2 {
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.button1 {
+    margin-top: 20px;
+    background-color: #ff783e;
+    padding: 15px 40px;
+    border-radius: 47px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+    background-color: #e96d30;
+}
+
+/* Icons Section */
+.hero .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
     margin-top: 50px;
 }
 
+/* Map Section */
+#map {
+    height: 400px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Section */
 .formulario {
-    width: 80%;
-    max-width: 2000px;
-    font-size: 25px;
-    margin: 0 auto;
-    margin-top: 100px;
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    font-size: 18px;
+}
+
+.formulario h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 label {
     font-weight: bold;
     margin-bottom: 8px;
     display: block;
+    color: #555;
 }
 
 input[type="text"],
@@ -42,14 +126,70 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 15px;
-    border: none;
-    border-radius: 15px;
-    background-color: #d6e9d8;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     margin-bottom: 20px;
     font-size: 16px;
     font-family: Arial, sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #50a048;
+    outline: none;
 }
 
 textarea {
     resize: none;
+}
+
+.formulario .button {
+    background: rgba(255, 120, 62, 1);
+    color: #fff;
+    font-size: 2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.formulario .button:hover {
+    background-color: #3d7a37;
+}
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.instagram-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: rgba(255, 120, 62, 1);
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+    transform: scale(1.05);
+    background-color: #ff946e;
+}
+
+.instagram-button img {
+    width: 5rem;
+    height: 3rem;
+    border-radius: 6px;
 }

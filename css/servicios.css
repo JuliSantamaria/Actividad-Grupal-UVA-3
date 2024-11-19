@@ -8,10 +8,17 @@
 
 .hero .p1 {
     font-size: 20px;
+    font-weight: 400;
 }
 
 .hero h1{
     font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.hero h2{
+    font-size: 32px;
     font-weight: 100;
     margin-bottom: 10px;
 }
@@ -43,18 +50,23 @@
     margin-bottom: 10px;
 }
 
-.button {
-    margin-top: 22px;
-    width: 200px;
+.button1 {
+    background: rgba(255, 120, 62, 1);
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
     text-align: center;
-    background-color: #ff783e;
-    padding: 13px 50px 13px 50px;
-    border-radius: 47px;
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
 
+.button1:hover {
+    background-color: #3d7a37;
 }
 
 .hero #img1 {
@@ -67,11 +79,12 @@
     font-size: 24px;
 }
 
+
+
 .hero .icons{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
     text-align: center;
     margin-top: 80px;
 }

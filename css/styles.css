@@ -20,6 +20,10 @@ body {
   flex-direction: column;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, li, button {
+  font-family: inherit;
+}
+
 header {
 
   padding: 10px;
@@ -67,10 +71,15 @@ nav .button {
   text-decoration: none;
   color: white;
   background-color: #ff783e;
-  padding: 10px;
-  border-radius: 100px;
+  padding: 1rem;
+  border-radius: 10rem;
   height: 6vh;
-  font-size: 20px;
+  font-size: 1.2rem;
+}
+
+nav .button:hover {
+  transform: scale(1.15);
+  background-color: #d94d1f;
 }
 
 
