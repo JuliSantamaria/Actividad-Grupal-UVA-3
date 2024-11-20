@@ -53,3 +53,68 @@ textarea {
 textarea {
     resize: none;
 }
+
+@media (max-width: 768px) {
+    /* Ajustes del contenedor principal */
+    .hero {
+      padding: 20px;
+      margin: 10px;
+      min-height: auto;
+    }
+  
+    /* Ajustes del texto */
+    .p1 {
+      font-size: 16px;
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+  
+    /* Ajustes del mapa */
+    #map {
+      height: 300px;
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    /* Ajustes del formulario */
+    .formulario {
+      width: 100%;
+      margin-top: 50px;
+      font-size: 16px;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    textarea {
+      height: 100px;
+    }
+  
+    /* Ajustes del footer */
+    footer {
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    footer img {
+      width: 80px;
+      margin-top: 10px;
+    }
+  }
+  

@@ -101,3 +101,74 @@ button {
 button:hover {
     background-color: #e75d22;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .calculator {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .label {
+        font-size: 18px;
+    }
+
+    select {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h3 {
+        font-size: 18px;
+    }
+
+    .calculator {
+        gap: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}

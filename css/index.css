@@ -16,7 +16,7 @@
 
 }
 
-.lefthero h2 {
+.lefthero h1 {
     font-weight: 400;
     font-size: 48px;
 }
@@ -42,3 +42,53 @@
 .hero img {
     width: 55vh;
 }
+
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+      margin: 10px;
+      border-radius: 20px;
+      min-height: auto;
+    }
+  
+    .lefthero {
+      gap: 20px;
+    }
+  
+    .lefthero h2 {
+      font-size: 28px;
+      line-height: 1.2;
+    }
+  
+    .lefthero p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  
+    .lefthero .button {
+      width: 100%;
+      font-size: 20px;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .hero img {
+      width: 80%;
+      margin: 20px auto;
+    }
+  
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+    }
+  
+    footer img {
+      max-width: 100px;
+      margin-top: 10px;
+    }
+  }
+  

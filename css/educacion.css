@@ -71,3 +71,24 @@
     color: #ffffff;
 
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero .section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero .tarjeta {
+        width: 90%;
+    }
+
+    .hero {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .section2 .subsection .button {
+        width: 100%;
+    }
+}

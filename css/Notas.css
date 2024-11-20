@@ -83,3 +83,36 @@ hr {
 .button2 {
     background-color: orange;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+
+    .menu-toggle:checked + .menu-icon + ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #4caf50;
+        padding: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .contenido p {
+        font-size: 14px;
+    }
+
+    .etiquetas {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+}
