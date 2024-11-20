@@ -7,9 +7,65 @@
     
 }
 
-.p1 {
-    font-size: 20px;
+.hero p {
+  font-size: 28px;
+  font-weight: 400;
 }
+
+.hero .p1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.hero h1{
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.hero h2{
+  font-size: 32px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+/* Subsection Section */
+.subsection {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.subsection .tarjeta {
+  background-color: #d8e4d4;
+  height: 50vh;
+  max-width: 35vh;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.subsection .tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.subsection .tarjeta .textos {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.subsection .tarjeta .textos h2 {
+  font-weight: 100;
+  margin-bottom: 10px;
+  color: #333;
+}
+
 
 h1{
     font-size: 50px;
@@ -23,6 +79,15 @@ h1{
     margin-top: 50px;
 }
 
+.hero .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 50px;
+}
+
+
 .formulario {
     width: 80%;
     max-width: 2000px;
@@ -30,6 +95,22 @@ h1{
     margin: 0 auto;
     margin-top: 100px;
 }
+
+.formulario .button {
+  background: rgba(255, 120, 62, 1);
+  color: #fff;
+  font-size: 2rem;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
 
 label {
     font-weight: bold;
@@ -52,6 +133,55 @@ textarea {
 
 textarea {
     resize: none;
+}
+
+.button1 {
+  margin-top: 20px;
+  background-color: #ff783e;
+  padding: 15px 40px;
+  border-radius: 47px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #e96d30;
+}
+
+.formulario .button:hover {
+  background-color: #3d7a37;
+}
+
+.redes-sociales {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.instagram-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  background-color: rgba(255, 120, 62, 1);
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 15px 30px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.instagram-button:hover {
+  transform: scale(1.05);
+  background-color: #ff946e;
+}
+
+.instagram-button img {
+  width: 5rem;
+  height: 3rem;
+  border-radius: 6px;
 }
 
 @media (max-width: 768px) {
