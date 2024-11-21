@@ -101,7 +101,3 @@
   .faq-item.active .faq-icon {
     transform: rotate(45deg);
   }
-
-  .method {
-    width: 55vh;
-  }
