@@ -77,10 +77,27 @@
     .hero .section2 {
         flex-direction: column;
         align-items: center;
+        gap: 40px;
+    }
+
+    .section1 img {
+        height: 20px;
+    }
+
+    .section1 p {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        line-height: 28.8px;
+        margin-top: 20px;
     }
 
     .hero .tarjeta {
         width: 90%;
+    }
+
+    .hero .tarjeta img {
+        width: 100%;
     }
 
     .hero {

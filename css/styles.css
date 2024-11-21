@@ -122,11 +122,11 @@ nav ul {
   gap: 20px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 
   }
 
