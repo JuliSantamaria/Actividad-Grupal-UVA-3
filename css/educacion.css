@@ -10,7 +10,11 @@
     font-size: 20px;
 }
 
-.hero .section1{
+.section1 p {
+    font-size: 24px;
+}
+
+.hero .section1 {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -18,33 +22,33 @@
     font-size: 18px;
 }
 
-.hero .section1 h1{
-    font-size: 40px;
+.hero .section1 h1 {
+    font-size: 50px;
+    font-weight: 100;
 }
 
 .hero .section1 img {
-    height: 50vh;
     margin-top: 15px;
 }
 
 .hero .section2 {
-    
+
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
     white-space: normal;
 }
 
-.hero .tarjeta{
+.hero .tarjeta {
     max-width: 70vh;
     height: 60vh;
     background-color: #d8e4d4;
 }
 
-.hero .section2 img{
+.hero .section2 img {
     width: 70vh;
     height: 25vh;
-    
+
 }
 
 .hero .subsection {
@@ -56,6 +60,7 @@
 
 .hero .subsection p {
     margin-top: 13px;
+    font-size: 24px;
 }
 
 
@@ -69,7 +74,12 @@
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
+    transition: background-color 0.3s ease;
 
+}
+
+.section2 .subsection .button:hover {
+    background-color: #CA511D;
 }
 
 /* Responsive */
@@ -80,9 +90,7 @@
         gap: 40px;
     }
 
-    .section1 img {
-        height: 20px;
-    }
+    .section1 img {}
 
     .section1 p {
         font-weight: 400;

@@ -1,94 +1,121 @@
 .hero {
-    background-color: #ffffff;
-    padding: 40px;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 40px;
-    min-height: 78vh;
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 40px;
+  min-height: 78vh;
 }
 
 .lefthero {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-right: 10vw;
 
 }
 
+.main-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+
 .lefthero h1 {
-    font-weight: 400;
-    font-size: 48px;
+  font-weight: 400;
+  font-size: 3rem;
 }
 
 .lefthero p {
-    font-weight: 400;
-    font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .lefthero .button {
-    width: 391px;
-    height: 84px;
-    text-align: center;
-    background-color: #ff783e;
-    padding: 20px;
-    border-radius: 47px;
-    font-size: 30px;
-    text-decoration: none;
-    color: #ffffff;
+  width: 391px;
+  height: 84px;
+  text-align: center;
+  background-color: #ff783e;
+  padding: 20px;
+  border-radius: 47px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
 
+.lefthero .button:hover {
+  background-color: #CA511D;
 }
 
 .hero img {
-    width: 55vh;
+  width: 55vh;
 }
 
 @media (max-width: 768px) {
-    /* Hero Section */
-    .hero {
-      flex-direction: column;
-      padding: 20px;
-      text-align: center;
-      margin: 10px;
-      border-radius: 20px;
-      min-height: auto;
-    }
-  
-    .lefthero {
-      gap: 20px;
-    }
-  
-    .lefthero h2 {
-      font-size: 28px;
-      line-height: 1.2;
-    }
-  
-    .lefthero p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-  
-    .lefthero .button {
-      width: 100%;
-      font-size: 20px;
-      height: auto;
-      padding: 15px;
-    }
-  
-    .hero img {
-      width: 80%;
-      margin: 20px auto;
-    }
-  
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 15px;
-    }
-  
-    footer img {
-      max-width: 100px;
-      margin-top: 10px;
-    }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 20px;
+    min-height: auto;
   }
-  
+
+  .lefthero {
+    gap: 20px;
+  }
+
+  .lefthero h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .lefthero p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .lefthero .button {
+    width: 100%;
+    font-size: 20px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .hero img {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+  }
+
+  footer img {
+    max-width: 100px;
+    margin-top: 10px;
+  }
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+
+  }
+
+  .lefthero {
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+}
