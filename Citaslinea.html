@@ -47,45 +47,62 @@
       <span>Citas en Línea</span>
     </div>
     <h1>Citas en Línea</h1>
-    <p>Reserva fácilmente una cita para la atención de tu mascota. Completa la información solicitada y selecciona la
-      fecha disponible en nuestro calendario.</p>
 
     <section class="formulario">
-      <h2>Información de contacto</h2>
+
       <form id="form-citas">
         <label for="nombre">Nombre</label>
         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
 
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+
+
+        <label for="year">Año</label>
+        <select id="year" required>
+        </select>
+
+        <label for="month">Mes</label>
+        <select id="month">
+          <option value="0">Enero</option>
+          <option value="1">Febrero</option>
+          <option value="2">Marzo</option>
+          <option value="3">Abril</option>
+          <option value="4">Mayo</option>
+          <option value="5">Junio</option>
+          <option value="6">Julio</option>
+          <option value="7">Agosto</option>
+          <option value="8">Septiembre</option>
+          <option value="9">Octubre</option>
+          <option value="10">Noviembre</option>
+          <option value="11">Diciembre</option>
+        </select>
+
+        <label for="horario">Horario</label>
+        <select id="horario" required>
+          <option value="">Selecciona una hora</option>
+          <option value="9">9:00</option>
+          <option value="10">10:00</option>
+          <option value="11">11:00</option>
+          <option value="12">12:00</option>
+          <option value="13">13:00</option>
+          <option value="14">14:00</option>
+          <option value="15">15:00</option>
+          <option value="16">16:00</option>
+          <option value="17">17:00</option>
+          <option value="18">18:00</option>
+        </select>
+
+        <section class="calendar">
+          <label for="horario">Fecha</label>
+
+          <div class="dates" id="dates"></div>
+
+          <button id="agendar" class="button">Confirmar Fecha</button>
+          <p id="mensaje"></p>
       </form>
+
     </section>
-
-    <section class="calendar">
-      <h2>Agenda tu cita</h2>
-      <label for="year">Año:</label>
-      <select id="year"></select>
-
-      <label for="month">Mes:</label>
-      <select id="month">
-        <option value="0">Enero</option>
-        <option value="1">Febrero</option>
-        <option value="2">Marzo</option>
-        <option value="3">Abril</option>
-        <option value="4">Mayo</option>
-        <option value="5">Junio</option>
-        <option value="6">Julio</option>
-        <option value="7">Agosto</option>
-        <option value="8">Septiembre</option>
-        <option value="9">Octubre</option>
-        <option value="10">Noviembre</option>
-        <option value="11">Diciembre</option>
-      </select>
-
-      <div class="dates" id="dates"></div>
-
-      <button id="agendar" class="button">Confirmar Fecha</button>
-      <p id="mensaje"></p>
     </section>
   </main>
 

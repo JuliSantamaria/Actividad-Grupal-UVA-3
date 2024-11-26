@@ -4,15 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const datesContainer = document.getElementById('dates');
   const mensaje = document.getElementById('mensaje');
   const agendarButton = document.getElementById('agendar');
-  const horario = document.getElementById('dates');
-
-
+  const horario = document.getElementById('horario');
+  const formCitas = document.getElementById('form-citas');
   const today = new Date();
   const currentYear = today.getFullYear();
   const currentMonth = today.getMonth();
 
   // Populate year dropdown
-  for (let i = currentYear; i <= currentYear + 10; i++) {
+  for (let i = currentYear; i <= currentYear + 1; i++) {
     yearSelect.add(new Option(i, i));
   }
   yearSelect.value = currentYear;
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startMonth = selectedYear === currentYear ? currentMonth : 0;
 
     for (let i = startMonth; i < 12; i++) {
-      const monthName = monthSelect.options[i]?.text || [
+      const monthName = [
         "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
         "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"
       ][i];
@@ -74,19 +73,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Display message when "Agendar Fecha" button is clicked
-  agendarButton.addEventListener('click', () => {
+  // Form submission handler
+  formCitas.addEventListener('submit', (e) => {
+    e.preventDefault();
     const selectedDate = document.querySelector('.date.selected');
-    if (selectedDate) {
-      const year = yearSelect.value;
-      const month = monthSelect.options[monthSelect.selectedIndex].text;
-      const day = selectedDate.dataset.date;
-      mensaje.textContent = `Fecha agendada: ${day} de ${month} de ${year}`;
-      mensaje.style.color = 'green';
-    } else {
+    const selectedTime = horario.value;
+
+    // Clear previous message
+    mensaje.textContent = '';
+
+    // Validate the form
+    if (!selectedDate) {
       mensaje.textContent = 'Por favor, selecciona una fecha válida.';
       mensaje.style.color = 'red';
+      return;
     }
+
+    if (!selectedTime) {
+      mensaje.textContent = 'Por favor, selecciona un horario.';
+      mensaje.style.color = 'red';
+      return;
+    }
+
+    const year = yearSelect.value;
+    const month = monthSelect.options[monthSelect.selectedIndex].text;
+    const day = selectedDate.dataset.date;
+
+    // Show success message
+    mensaje.textContent = `Cita confirmada para el ${day} de ${month} de ${year} a las ${selectedTime}:00.`;
+    mensaje.style.color = 'green';
+
+    // Reset form and clear selection
+    formCitas.reset();
+    document.querySelectorAll('.date').forEach(d => d.classList.remove('selected'));
   });
 
   // Initialize calendar and update months
