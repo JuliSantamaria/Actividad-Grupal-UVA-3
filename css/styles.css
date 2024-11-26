@@ -60,7 +60,7 @@ nav ul li:hover {
 nav ul li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 23px;
+  font-size: 2rem;
 }
 
 nav .Logo {
@@ -80,10 +80,14 @@ nav .button {
   color: white;
   background-color: #ff783e;
   padding: 10px;
+  padding-bottom: 20px;
+  line-height: 1;
   border-radius: 100px;
-  height: 6vh;
-  font-size: 20px;
+  font-size: 2rem;
   transition: background-color 0.3s ease;
+  width: 200px;
+  text-align: center;
+
 }
 
 nav .button:hover {
@@ -91,7 +95,7 @@ nav .button:hover {
 }
 
 nav h3 {
-  font-size: 40px;
+  font-size: 3rem;
   letter-spacing: 2px;
   color: #ffffff;
 
@@ -112,7 +116,7 @@ footer {
 
 footer p {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 footer a {
@@ -139,6 +143,10 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
+}
+
+.breadcrumbs {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {

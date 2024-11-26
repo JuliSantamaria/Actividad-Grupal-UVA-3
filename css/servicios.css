@@ -6,22 +6,25 @@
   min-height: 90vh;
 }
 
-.hero .p1 {
-  font-size: 20px;
-  font-weight: 400;
-}
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 100;
   margin-bottom: 10px;
 }
 
 .hero h2 {
-  font-size: 32px;
+  font-size: 3rem;
   font-weight: 100;
   margin-bottom: 10px;
 }
+
+.hero h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
 
 .subsection {
   display: flex;
@@ -31,7 +34,7 @@
 
 .subsection .tarjeta {
   background-color: #d8e4d4;
-  height: 50vh;
+  height: 56vh;
   max-width: 35vh;
 
 }
@@ -47,12 +50,19 @@
 .subsection .tarjeta .textos h2 {
   font-weight: 100;
   margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.subsection .tarjeta .textos p {
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
 }
 
 .button1 {
   background: rgba(255, 120, 62, 1);
   color: #fff;
-  font-size: 18px;
+  font-size: 2rem;
   padding: 15px 30px;
   border: none;
   border-radius: 30px;
@@ -69,14 +79,11 @@
   background-color: #CA511D;
 }
 
-.hero #img1 {
-  width: 100%;
-  margin-top: 15px;
-}
+.hero #img1 {}
 
 .hero #subtexto1 {
   margin-top: 20px;
-  font-size: 24px;
+  font-size: 2rem;
   margin-left: 2vw;
   margin-right: 2vw;
 }
@@ -102,9 +109,16 @@
   margin-top: 50px;
 }
 
+.imagen-servicios {
+  width: 100%;
+  /* Ensure it scales to fit the container */
+  height: auto;
+  /* Maintain aspect ratio */
+}
 
 
 @media (max-width: 768px) {
+
 
   /* Ajustes del contenedor principal */
   .hero {
@@ -120,18 +134,13 @@
   }
 
   .hero h1 {
-    font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .hero #img1 {
-    width: 100%;
-    margin-top: 10px;
-  }
+
 
   .hero #subtexto1 {
-    font-size: 16px;
     text-align: justify;
   }
 
@@ -175,31 +184,28 @@
   }
 
   .subsection .tarjeta .textos h2 {
-    font-size: 18px;
     margin-bottom: 10px;
   }
 
   .subsection .tarjeta .textos p {
-    font-size: 14px;
     line-height: 1.6;
   }
 
   /* Botones */
   .button {
-    font-size: 16px;
     padding: 10px 30px;
     margin-top: 15px;
   }
 
-  /* Ajustes del footer */
-  footer {
-    padding: 20px;
-    text-align: center;
-    font-size: 12px;
+  .imagen-servicios {
+    object-fit: cover;
+    /* Crop the image */
+    object-position: center;
+    /* Focus on the center */
+    height: 100px;
+    /* Set a fixed height to define the crop area */
   }
 
-  footer img {
-    width: 80px;
-    margin-top: 10px;
-  }
+
+
 }

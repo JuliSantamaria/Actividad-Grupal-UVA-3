@@ -1,197 +1,201 @@
 .hero {
-    background-color: #ffffff;
-    padding: 40px;
-    margin: 20px;
-    border-radius: 40px;
-    min-height: 150vh;
-    
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 40px;
+  min-height: 150vh;
+
 }
 
 .p1 {
-    font-size: 20px;
+  font-size: 2rem;
 }
 
-h1{
-    font-size: 50px;
-    margin-bottom: 30px;
+h1 {
+  font-size: 4em;
+  margin-bottom: 30px;
 }
 
 #map {
-	height: 400px;
-	width: 60%;
-    margin: 0 auto;
-    margin-top: 50px;
+  height: 400px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .formulario {
-    width: 80%;
-    max-width: 2000px;
-    font-size: 25px;
-    margin: 0 auto;
-    margin-top: 100px;
+  width: 80%;
+  max-width: 2000px;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
 }
 
 input[type="text"],
 input[type="email"] {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 15px;
-    background-color: #d6e9d8;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #d6e9d8;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 
 .calendar {
-    display: flex;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
-    margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
-.calendar h1{
-    font-size: 30px;
-    text-align: center;
+.calendar h1 {
+  font-size: 30px;
+  text-align: center;
 }
 
 label {
-    display: block;
-    margin-top: 10px;
+  display: block;
+  margin-top: 10px;
 }
-  
+
 #dates {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-    margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
 }
-  
+
 .date {
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-    cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
 }
-  
+
 .date.selected {
-    background-color: #4caf50;
-    color: white;
+  background-color: #4caf50;
+  color: white;
 }
-  
+
 .date.weekend {
-    color: red;
+  color: red;
 }
-  
+
 button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+
 }
-  
+
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
-  
+
 #mensaje {
-    margin-top: 10px;
-    font-weight: bold;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.disabled {
+  color: #ccc;
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
-    /* Hero Section */
-    .hero {
-      padding: 20px;
-      margin: 10px;
-      border-radius: 20px;
-      min-height: auto;
-    }
-  
-    .hero h1 {
-      font-size: 36px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    .hero h3 {
-      font-size: 16px;
-      text-align: justify;
-      line-height: 1.5;
-    }
-  
-    .formulario {
-      width: 90%;
-      margin: 20px auto;
-      font-size: 18px;
-    }
-  
-    input[type="text"],
-    input[type="email"] {
-      font-size: 14px;
-      padding: 10px;
-    }
-  
-    /* Calendario */
-    .calendar {
-      width: 90%;
-      margin: 20px auto;
-      padding: 15px;
-    }
-  
-    .calendar h1 {
-      font-size: 24px;
-      text-align: center;
-    }
-  
-    label {
-      font-size: 14px;
-    }
-  
-    #dates {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
-    }
-  
-    button {
-      width: 100%;
-      font-size: 14px;
-      padding: 10px;
-    }
-  
-    #mensaje {
-      font-size: 14px;
-    }
-  
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-    }
-  
-    footer img {
-      max-width: 80px;
-      margin-top: 10px;
-    }
+
+  /* Hero Section */
+  .hero {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    min-height: auto;
   }
-  
-  
+
+  .hero h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hero h3 {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  .formulario {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 18px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Calendario */
+  .calendar {
+    width: 90%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .calendar h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  #dates {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #mensaje {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer img {
+    max-width: 80px;
+    margin-top: 10px;
+  }
+}

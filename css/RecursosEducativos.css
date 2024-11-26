@@ -1,206 +1,201 @@
 .hero {
-    background-color: #ffffff;
-    padding: 40px;
-    margin: 20px;
-    border-radius: 40px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: "Katibeh", serif;
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 40px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Katibeh", serif;
 }
 
 .hero .p1 {
-    font-size: 20px;
-    font-weight: 400;
+  font-size: 2em;
+  font-weight: 400;
 }
 
 
-.hero h1{
-    font-size: 64px;
-    font-weight: 100;
-    margin-bottom: 10px;
-    line-height: 76.8px;
-    margin-bottom: 50px;
+.hero h1 {
+  font-size: 4em;
+  font-weight: 100;
+  margin-bottom: 10px;
+  line-height: 76.8px;
+  margin-bottom: 50px;
 }
 
 .hero img {
-    width: 100%;
-    height: 336px;
+  width: 100%;
+  height: 336px;
 }
 
-.hero .p2{
-    font-size: 24px;
-    margin-top: 25px;
-    font-weight: 400;
+.hero .p2 {
+  font-size: 2em;
+  margin-top: 25px;
+  font-weight: 400;
 }
 
 .hero .subtitle {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .resources-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+
+}
+
+/* Estilos de las tarjetas */
+.resource-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px;
+  gap: 20px;
+  height: 20vh;
+  width: 100%;
+  border: none;
+  justify-content: start;
+}
+
+/* Imagen */
+.resource-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Contenido */
+.resource-content {
+  flex: 1;
+  padding-left: 60px;
+
+}
+
+.resource-content h3 {
+  margin: 0 0 5px;
+  font-size: 3em;
+  color: #333;
+}
+
+.resource-content .resource-type {
+  display: block;
+  font-size: 2em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.resource-content p {
+  font-size: 2em;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Botón */
+.view-button {
+  background-color: rgba(255, 120, 62, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 15px;
+  margin-left: 30px;
+  margin-top: 20px;
+  border-radius: 47px;
+  width: 200px;
+  font-family: "Katibeh", serif;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+}
+
+.view-button:hover {
+  background-color: #d94d1f;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+  /* Ajustes del contenedor principal */
+  .hero {
     padding: 20px;
-    
+    margin: 10px;
+    border-radius: 20px;
+    min-height: auto;
   }
-  
-  /* Estilos de las tarjetas */
-  .resource-card {
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px;
+
+  .hero h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+
+  .hero img {
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .hero .p2 {
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 15px;
+  }
+
+  .resources-container {
     gap: 20px;
-    height: 20vh;
+    padding: 10px;
+  }
+
+  /* Tarjetas responsivas */
+  .resource-card {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     width: 100%;
-    border: none;
-    justify-content: start;
+    padding: 15px;
+    gap: 15px;
   }
-  
-  /* Imagen */
+
   .resource-card img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
   }
-  
-  /* Contenido */
+
   .resource-content {
-    flex: 1;
-    padding-left: 60px;
-    
+    padding-left: 0;
+    text-align: center;
   }
-  
+
   .resource-content h3 {
-    margin: 0 0 5px;
-    font-size: 30px;
-    color: #333;
-  }
-  
-  .resource-content .resource-type {
-    display: block;
-    font-size: 20px;
-    color: #666;
     margin-bottom: 10px;
   }
-  
+
   .resource-content p {
-    font-size: 20px;
-    color: #666;
     line-height: 1.4;
-  }
-  
-  /* Botón */
-  .view-button {
-    background-color: rgba(255, 120, 62, 1);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 22px;
-    padding: 15px;
-    margin-left: 30px;
-    margin-top: 20px;
-    border-radius: 47px;
-    width: 100px;
-    font-family: "Katibeh", serif;
-    font-weight: 400;
-  }
-  
-  .view-button:hover {
-    background-color: #d94d1f;
   }
 
   .icons {
-    display: flex;
-    align-items: center;
-    gap: 10px
-    ;
+    justify-content: center;
+    gap: 5px;
   }
 
-  @media (max-width: 768px) {
-    /* Ajustes del contenedor principal */
-    .hero {
-      padding: 20px;
-      margin: 10px;
-      border-radius: 20px;
-      min-height: auto;
-    }
-  
-    .hero h1 {
-      font-size: 36px;
-      text-align: center;
-      margin-bottom: 20px;
-      line-height: 1.2;
-    }
-  
-    .hero img {
-      height: auto;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
-  
-    .hero .p2 {
-      font-size: 18px;
-      line-height: 1.5;
-      text-align: justify;
-      margin-top: 15px;
-    }
-  
-    .resources-container {
-      gap: 20px;
-      padding: 10px;
-    }
-  
-    /* Tarjetas responsivas */
-    .resource-card {
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-      width: 100%;
-      padding: 15px;
-      gap: 15px;
-    }
-  
-    .resource-card img {
-      width: 100%;
-      height: auto;
-      max-width: 300px;
-    }
-  
-    .resource-content {
-      padding-left: 0;
-      text-align: center;
-    }
-  
-    .resource-content h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-  
-    .resource-content p {
-      font-size: 16px;
-      line-height: 1.4;
-    }
-  
-    .icons {
-      justify-content: center;
-      gap: 5px;
-    }
-  
-    .icons .resource-type {
-      font-size: 16px;
-    }
-  
-    /* Botón */
-    .view-button {
-      width: 80%;
-      font-size: 16px;
-      padding: 10px;
-      margin-top: 15px;
-    }
+  .icons .resource-type {}
+
+  /* Botón */
+  .view-button {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 0;
   }
-  
+}

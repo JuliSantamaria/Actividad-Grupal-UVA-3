@@ -7,13 +7,13 @@
 }
 
 .hero .p1 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 
 .hero h1 {
-  font-size: 50px;
+  font-size: 4rem;
   font-weight: 100;
   margin-bottom: 10px;
   line-height: 76.8px;
@@ -25,7 +25,7 @@
 }
 
 .hero .p2 {
-  font-size: 24px;
+  font-size: 2rem;
   margin-top: 25px;
   font-weight: 400;
 }
@@ -55,7 +55,7 @@
   background-color: rgba(209, 229, 211, 1);
   padding: 15px;
   text-align: left;
-  font-size: 24px;
+  font-size: 2rem;
   color: black;
   cursor: pointer;
   display: flex;
@@ -78,11 +78,14 @@
   max-height: 0;
   overflow: hidden;
   padding: 0;
-  background-color: rgba(80, 160, 72, 1);
-  color: #2a2a2a;
-  font-size: 18px;
+  background-color: #144E0B;
+  font-size: 2rem;
   border-radius: 6px;
   transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+  color: #fff;
 }
 
 .faq-question .faq-icon {
@@ -112,7 +115,6 @@
   }
 
   .Logo h3 {
-    font-size: 1.5rem;
     margin-top: 5px;
   }
 
@@ -123,14 +125,12 @@
   }
 
   .hero h1 {
-    font-size: 1.8rem;
     line-height: 2.2rem;
     text-align: center;
   }
 
   .hero .p1,
   .hero .p2 {
-    font-size: 1rem;
     text-align: center;
 
   }
@@ -140,14 +140,11 @@
   }
 
   .faq-question {
-    font-size: 1rem;
     padding: 10px;
     height: auto;
   }
 
-  .faq-answer {
-    font-size: 0.9rem;
-  }
+  .faq-answer {}
 
   footer {
     text-align: center;

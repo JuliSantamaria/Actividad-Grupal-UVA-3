@@ -27,25 +27,31 @@
 
 .lefthero h1 {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .lefthero p {
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .lefthero .button {
   width: 391px;
-  height: 84px;
   text-align: center;
   background-color: #ff783e;
-  padding: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
   border-radius: 47px;
-  font-size: 30px;
+  font-size: 2.5rem;
   text-decoration: none;
   color: #ffffff;
   transition: background-color 0.3s ease;
+  display: flex;
+  /* Flexbox para alinear contenido */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
 }
 
 .lefthero .button:hover {
@@ -53,7 +59,7 @@
 }
 
 .hero img {
-  width: 55vh;
+  width: 50vh;
 }
 
 @media (max-width: 768px) {
@@ -68,23 +74,18 @@
     min-height: auto;
   }
 
+  .lefthero h1 {
+    font-weight: 400;
+    font-size: 3rem;
+  }
+
   .lefthero {
-    gap: 20px;
-  }
-
-  .lefthero h2 {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .lefthero p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    gap: 4rem;
   }
 
   .lefthero .button {
     width: 100%;
-    font-size: 20px;
+    font-size: 2rem;
     height: auto;
     padding: 15px;
   }

@@ -6,12 +6,9 @@
     min-height: 150vh;
 }
 
-.p1 {
-    font-size: 20px;
-}
 
 .section1 p {
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 .hero .section1 {
@@ -19,13 +16,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 18px;
+    font-size: 2rem;
 }
 
 .hero .section1 h1 {
-    font-size: 50px;
+    font-size: 4rem;
     font-weight: 100;
 }
+
 
 .hero .section1 img {
     margin-top: 15px;
@@ -41,7 +39,7 @@
 
 .hero .tarjeta {
     max-width: 70vh;
-    height: 60vh;
+    height: 70vh;
     background-color: #d8e4d4;
 }
 
@@ -60,7 +58,7 @@
 
 .hero .subsection p {
     margin-top: 13px;
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 
@@ -71,7 +69,7 @@
     background-color: #ff783e;
     padding: 15px 50px 15px 50px;
     border-radius: 47px;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
     color: #ffffff;
     transition: background-color 0.3s ease;
@@ -82,6 +80,18 @@
     background-color: #CA511D;
 }
 
+.hero .section2 .tarjeta .subsection h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.imagen-educacion {
+    width: 100%;
+    /* Ensure it scales to fit the container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero .section2 {
@@ -90,11 +100,19 @@
         gap: 40px;
     }
 
+    .imagen-educacion {
+        object-fit: cover;
+        /* Crop the image */
+        object-position: center;
+        /* Focus on the center */
+        height: 100px;
+        /* Set a fixed height to define the crop area */
+    }
+
     .section1 img {}
 
     .section1 p {
         font-weight: 400;
-        font-size: 24px;
         text-align: center;
         line-height: 28.8px;
         margin-top: 20px;
@@ -102,6 +120,9 @@
 
     .hero .tarjeta {
         width: 90%;
+        height: 120vh;
+        margin-bottom: 2vh;
+
     }
 
     .hero .tarjeta img {

@@ -6,12 +6,9 @@
     min-height: 100vh;
 }
 
-.hero .p1 {
-    font-size: 20px;
-}
 
-.hero h1{
-    font-size: 50px;
+.hero h1 {
+    font-size: 4rem;
     font-weight: 100;
     margin-bottom: 10px;
 }
@@ -21,36 +18,42 @@
     width: 100%;
 }
 
-.hero section p{
+.hero section p {
     margin-bottom: 25px;
     text-align: center;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
+.texto-santuario p {
+    font-size: 2rem;
+}
+
 
 .button {
-    
+
     margin-top: 22px;
-    width: 200px;
+    width: 50vh;
     text-align: center;
     background-color: #ff783e;
     padding: 13px 50px 13px 50px;
     border-radius: 47px;
-    font-size: 20px;
+    font-size: 2rem;
     text-decoration: none;
     color: #ffffff;
-    
+
 
 }
 
-.hero section{
+.hero section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.hero section .button{
-
-}
+.hero section .button {}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -61,7 +64,6 @@
     }
 
     .hero .p1 {
-        font-size: 16px;
         margin-bottom: 10px;
     }
 
@@ -76,25 +78,19 @@
     }
 
     .hero section p {
-        font-size: 16px;
         padding: 0 10px;
     }
 
     .button {
         width: 150px;
         padding: 10px 30px;
-        font-size: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero h1 {
-        font-size: 28px;
-    }
+    .hero h1 {}
 
-    .hero section p {
-        font-size: 14px;
-    }
+    .hero section p {}
 
     .button {
         width: 100%;

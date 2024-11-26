@@ -1,30 +1,30 @@
 .hero {
-    background-color: #ffffff;
-    padding: 40px;
-    margin: 20px;
-    border-radius: 40px;
-    min-height: 150vh;
-    
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 20px;
+  border-radius: 40px;
+  min-height: 150vh;
+
 }
 
 .hero p {
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 .hero .p1 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
 }
 
-.hero h1{
-  font-size: 50px;
+.hero h1 {
+  font-size: 4rem;
   font-weight: 100;
   margin-bottom: 10px;
 }
 
-.hero h2{
-  font-size: 32px;
+.hero h2 {
+  font-size: 3rem;
   font-weight: 100;
   margin-bottom: 10px;
 }
@@ -66,16 +66,23 @@
 }
 
 
-h1{
-    font-size: 50px;
-    margin-bottom: 30px;
+h1 {
+  font-size: 4rem;
+  margin-bottom: 30px;
 }
 
 #map {
-	height: 400px;
-	width: 60%;
-    margin: 0 auto;
-    margin-top: 50px;
+  height: 400px;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.map2 {
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .hero .icons {
@@ -88,11 +95,11 @@ h1{
 
 
 .formulario {
-    width: 80%;
-    max-width: 2000px;
-    font-size: 25px;
-    margin: 0 auto;
-    margin-top: 100px;
+  width: 80%;
+  max-width: 2000px;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 100px;
 }
 
 .formulario .button {
@@ -112,26 +119,26 @@ h1{
 
 
 label {
-    font-weight: bold;
-    margin-bottom: 8px;
-    display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 15px;
-    background-color: #d6e9d8;
-    margin-bottom: 20px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: #d6e9d8;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .button1 {
@@ -184,66 +191,61 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    /* Ajustes del contenedor principal */
-    .hero {
-      padding: 20px;
-      margin: 10px;
-      min-height: auto;
-    }
-  
-    /* Ajustes del texto */
-    .p1 {
-      font-size: 16px;
-      text-align: center;
-    }
-  
-    h1 {
-      font-size: 30px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-  
-    p {
-      font-size: 14px;
-      line-height: 1.6;
-      text-align: justify;
-    }
-  
-    /* Ajustes del mapa */
-    #map {
-      height: 300px;
-      width: 100%;
-      margin: 20px 0;
-    }
-  
-    /* Ajustes del formulario */
-    .formulario {
-      width: 100%;
-      margin-top: 50px;
-      font-size: 16px;
-    }
-  
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      padding: 10px;
-      font-size: 14px;
-    }
-  
-    textarea {
-      height: 100px;
-    }
-  
-    /* Ajustes del footer */
-    footer {
-      text-align: center;
-      padding: 10px;
-      font-size: 12px;
-    }
-  
-    footer img {
-      width: 80px;
-      margin-top: 10px;
-    }
+
+  /* Ajustes del contenedor principal */
+  .hero {
+    padding: 20px;
+    margin: 10px;
+    min-height: auto;
   }
-  
+
+  /* Ajustes del texto */
+  .p1 {
+    text-align: center;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  /* Ajustes del mapa */
+  #map {
+    height: 300px;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  /* Ajustes del formulario */
+  .formulario {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  /* Ajustes del footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  footer img {
+    width: 80px;
+    margin-top: 10px;
+  }
+}

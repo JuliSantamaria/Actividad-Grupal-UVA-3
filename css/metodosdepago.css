@@ -4,29 +4,29 @@
     margin: 20px;
     border-radius: 40px;
     min-height: 100vh;
-  }
-  
-  .hero .p1 {
-    font-size: 20px;
+}
+
+.hero .p1 {
+    font-size: 2em;
     font-weight: 400;
-  }
-  
-  
-  .hero h1 {
-    font-size: 50px;
+}
+
+
+.hero h1 {
+    font-size: 4em;
     font-weight: 100;
     margin-bottom: 10px;
     line-height: 76.8px;
-  }
- 
-  .hero .p2 {
-    font-size: 24px;
+}
+
+.hero .p2 {
+    font-size: 2em;
     margin-top: 25px;
     font-weight: 400;
-  }
+}
 
 .hero p {
-    font-size: 24px;
+    font-size: 2em;
 }
 
 
@@ -34,9 +34,9 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
+
     margin-top: 120px;
-    
+
 }
 
 .card {
@@ -52,7 +52,7 @@
 .card .imgs {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .card img {
@@ -60,13 +60,13 @@
     margin: 0 auto;
 }
 
-.card .imgs1{
+.card .imgs1 {
     display: flex;
     flex-direction: column;
     margin-top: 60px;
 }
 
-.card .imgs2{
+.card .imgs2 {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -78,13 +78,7 @@
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
     color: #000;
 }
-
-
-
-
-
-
