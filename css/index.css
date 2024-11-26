@@ -59,7 +59,7 @@
 }
 
 .hero img {
-  width: 50vh;
+  width: auto;
 }
 
 @media (max-width: 768px) {
